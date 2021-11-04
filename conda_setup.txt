@@ -1,0 +1,9 @@
+conda create -n project python=3.7 anaconda -y
+conda activate project
+conda install -c pyviz hvplot geoviews
+pip install python-dotenv
+pip install alpaca-trade-api
+conda install -c anaconda requests
+conda install ipykernel
+conda install nb_conda_kernels
+
