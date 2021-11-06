@@ -7,3 +7,8 @@ conda install -c anaconda requests
 conda install ipykernel
 conda install nb_conda_kernels
 
+conda install dash
+conda install -c plotly jupyter-dash
+conda install -c plotly jupyterlab-dash
+
+
