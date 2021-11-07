@@ -1,1 +1,9 @@
-Hello im here
+git checkout main
+git pull
+get checkout <name of branch> (or the branch you are using). if you create a new branch use git checkout -b <branch name>
+git merge origin main
+Then make your changes
+git add .
+git commit -m “my commits”
+git push
+use the UI to make merge to main
