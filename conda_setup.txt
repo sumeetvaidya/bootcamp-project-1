@@ -11,4 +11,7 @@ conda install dash
 conda install -c plotly jupyter-dash
 conda install -c plotly jupyterlab-dash
 
+conda install -c anaconda dash-html-components
+conda install -c anaconda pandas-datareader
 
+pip install yfinance --upgrade --no-cache-dir

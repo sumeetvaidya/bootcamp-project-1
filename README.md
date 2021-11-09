@@ -1,12 +1,12 @@
 
-## Portfolio Analyzer
-This project ....
+## Portfolio Analysis
+This project contains a financial database and web application by using API, SQL, Python, and the Dash library to analyze and display the performance of a stock/bond portfolio in a Dash dashboard as a web based application. The performance of a hypothetical stock and bond portfolio is tracked using several key data calculations. This Quantatitive Analysis (QA) was completed using Panda DataFrames to display several key metrics of the portfolios performance. Among the QA is YTD Return vs SPY YTD, Total Return vs SP500, P&L Total Return SPY, Total Cumalative Return over time, Daily Returns, Cumulative Return by Ticker, Rolling 21 day return, Sharpe Ratio, Rolling 60 day Beta, Simulated Returns, Simulated Cumulative P&L.
 
-The project is deployed as a ...
 
 ## Dashboard Images
-![alt text]()
-![alt text]()
+![alt text](./Resources/Dash1.png)
+![alt text](./Resources/Dash1.png)
+![alt text](./Resources/Dash3.png)
 
 - - - 
 ## Technologies
@@ -16,21 +16,28 @@ This is a Python v 3.7 project leveraging numerous python modules. The modules a
 #### -- Modules
 Modules to be imported to a editor. This project primarily uses Jupyter Notebook while the presentation layer uses Dash for the interactive visual dashboard.
 ```
+# Import initial libraries
+import os
 import pandas as pd
 import numpy as np
-from pathlib import Path
-import sqlalchemy
+import datetime
+import matplotlib.pyplot as plt
 %matplotlib inline
-import hvplot.pandas
-import plotly.graph_objects as go
+import alpaca_trade_api as tradeapi
 import dash
 import dash_core_components as dcc
-from dash import html
+import dash_html_components as html
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from MCForecastTools import MCSimulation
-import dash_table
+from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
+
+import plotly.graph_objs as go
+import plotly.offline as pyo
+import plotly.graph_objs as go
+# Set notebook mode to work in offline
+pyo.init_notebook_mode(connected=True)
 ```
 
 #### -- APIs and Datasources
@@ -45,7 +52,7 @@ Database connection string and the physical database to consolidate and query th
 ```
 database_connection_string ='sqlite:///Muskies.db'
 ```
-The project also leverages ten years of daily stocks trades from Yahoo Finanace for the following Indices: Crypto, Bonds, SP500 and the Gold Index.
+The project also reads historical ticker prices from an excel workbook
 
 - - - 
 ## Installation Guide
