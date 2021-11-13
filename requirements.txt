@@ -80,7 +80,6 @@ holoviews==1.14.6
 html5lib==1.1
 hvplot==0.7.3
 hypothesis==6.14.1
-icu==58.2
 idna==3.2
 imagecodecs==2021.8.26
 imageio==2.9.0
