@@ -73,7 +73,6 @@ entrypoints==0.3
 et-xmlfile==1.1.0
 fastcache==1.1.0
 filelock==3.3.1
-fix-yahoo-finance==0.1.37
 flake8==3.9.2
 Flask==1.1.2
 Flask-Compress==1.10.1
