@@ -118,7 +118,6 @@ mkl_random==1.2.2
 mock==4.0.3
 more-itertools==8.10.0
 mpmath==1.2.1
-msgpack-python==1.0.2
 multidict==5.2.0
 multipledispatch==0.6.0
 multitasking==0.0.9
