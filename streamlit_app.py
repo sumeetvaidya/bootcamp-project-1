@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import os
 import datetime
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 #%matplotlib inline
 import dash
 import dash_core_components as dcc
