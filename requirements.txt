@@ -160,7 +160,6 @@ plotly==4.14.3
 pluggy==0.13.1
 ply==3.11
 poyo==0.5.0
-proj==7.0.1
 prometheus_client==0.11.0
 prompt-toolkit==3.0.20
 prompt_toolkit==3.0.20
