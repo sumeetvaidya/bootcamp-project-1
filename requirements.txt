@@ -149,7 +149,6 @@ path.py==12.5.0
 pathlib2==2.3.6
 pathspec==0.7.0
 patsy==0.5.2
-pcre==8.45
 pdfkit==0.6.1
 pep8==1.7.1
 pexpect==4.8.0
