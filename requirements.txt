@@ -32,7 +32,6 @@ boto==2.49.0
 bottleneck==1.3.2
 brotli==1.0.9
 brotlipy==0.7.0
-ca-certificates==2021.10.26
 cachetools==4.2.4
 certifi==2021.10.8
 cffi==1.14.6
