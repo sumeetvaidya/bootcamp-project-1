@@ -25,7 +25,6 @@ binaryornot==0.4.4
 bitarray==2.3.0
 bkcharts==0.2
 black==19.10b0
-blas==1.0
 bleach==4.0.0
 blinker==1.4
 blosc==1.21.0
