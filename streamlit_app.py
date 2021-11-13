@@ -17,10 +17,10 @@ from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 import plotly.graph_objs as go
 import plotly.offline as pyo
 import plotly.graph_objs as go
-import ipywidgets as widgets
-import dash_table
-import dash_table.FormatTemplate as FormatTemplate
-from dash_table.Format import Format, Scheme, Symbol, Group
+#import ipywidgets as widgets
+#import dash_table
+#import dash_table.FormatTemplate as FormatTemplate
+#from dash_table.Format import Format, Scheme, Symbol, Group
 
 from pandas_datareader import data as pdr
 import yfinance as yf
