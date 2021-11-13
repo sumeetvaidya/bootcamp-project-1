@@ -66,7 +66,6 @@ flake8==3.9.2
 flask==1.1.2
 flask-compress==1.10.1
 fonttools==4.25.0
-freetype==2.11.0
 fsspec==2021.8.1
 future==0.18.2
 gevent==21.8.0
