@@ -167,7 +167,6 @@ protobuf==3.19.1
 psutil==5.8.0
 ptyprocess==0.7.0
 py==1.10.0
-py-lief==0.10.1
 pyarrow==6.0.0
 pycodestyle==2.7.0
 pycosat==0.6.3
