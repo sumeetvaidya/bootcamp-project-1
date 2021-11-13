@@ -5,11 +5,11 @@ import numpy as np
 import pandas as pd
 import os
 import datetime
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 #%matplotlib inline
-import dash
-import dash_core_components as dcc
-from dash import html
+#import dash
+#import dash_core_components as dcc
+#from dash import html
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
@@ -17,10 +17,10 @@ from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 import plotly.graph_objs as go
 import plotly.offline as pyo
 import plotly.graph_objs as go
-import ipywidgets as widgets
-import dash_table
-import dash_table.FormatTemplate as FormatTemplate
-from dash_table.Format import Format, Scheme, Symbol, Group
+#import ipywidgets as widgets
+#import dash_table
+#import dash_table.FormatTemplate as FormatTemplate
+#from dash_table.Format import Format, Scheme, Symbol, Group
 
 from pandas_datareader import data as pdr
 import yfinance as yf
