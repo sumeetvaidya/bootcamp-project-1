@@ -265,8 +265,3 @@ yarl==1.7.2
 yfinance==0.1.64
 zict==2.0.0
 zipp==3.6.0
-zlib==1.2.11
-zope==1.0
-zope.event==4.5.0
-zope.interface==5.4.0
-zstd==1.4.9
