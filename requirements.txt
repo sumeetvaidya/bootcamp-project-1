@@ -1,6 +1,4 @@
-aiohttp==3.7.4.post0
 alabaster==0.7.12
-alpaca-trade-api==1.4.1
 altair==4.1.0
 ansi2html==1.6.0
 anyio==2.2.0
