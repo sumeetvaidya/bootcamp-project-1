@@ -35,7 +35,6 @@ brotlipy==0.7.0
 cachetools==4.2.4
 certifi==2021.10.8
 cffi==1.14.6
-cfitsio==3.470
 cftime==1.5.0
 chardet==3.0.4
 charls==2.2.0
