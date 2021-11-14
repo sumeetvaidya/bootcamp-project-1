@@ -15,3 +15,5 @@ conda install -c anaconda dash-html-components
 conda install -c anaconda pandas-datareader
 
 pip install yfinance --upgrade --no-cache-dir
+pip install steamlit
+pip install streamlit-aggrid
