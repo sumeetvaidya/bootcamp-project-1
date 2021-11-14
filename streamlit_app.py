@@ -649,11 +649,11 @@ def create_and_show_charts(merged_portfolio_sp_YTD,df_portfolio_value
     st.plotly_chart(fig_rolling_21day_returns, use_container_width=True)
     st.plotly_chart(fig_sharpe_ratio, use_container_width=True)
     st.plotly_chart(fig_rolling_60day_beta, use_container_width=True)
-    st.text(beta_summary,use_container_width=True)
+    st.text(beta_summary)
     
     st.plotly_chart(fig_simulated_returns, use_container_width=True)
     st.plotly_chart(fig_simulated_cum_pnl, use_container_width=True)
-    st.text(simulation_summary,use_container_width=True)
+    st.text(simulation_summary)
     
     st.plotly_chart(fig1,use_container_width=True)
     st.plotly_chart(fig2,use_container_width=True)
