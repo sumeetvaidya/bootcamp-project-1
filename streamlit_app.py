@@ -770,8 +770,8 @@ def run_analysis(portfolio_df):
 def main():
     st.set_page_config(layout='wide')
     show_header()
-    portfolio_df = get_holdings()
-    show_holdings(portfolio_df)
+    holdings_df = get_holdings()
+    show_holdings(holdings_df)
     if st.button('Start Analysis'):
         with st.spinner("Analysis Running"):
             #Refresh the Portfolio before every run
