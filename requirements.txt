@@ -6,3 +6,4 @@ streamlit==1.2.0
 streamlit-aggrid==0.2.2.post4
 yfinance==0.1.64
 alpaca-trade-api==1.4.1
+openpyxl==3.0.9
