@@ -771,6 +771,7 @@ def main():
     st.set_page_config(layout='wide')
     show_header()
     holdings_df = get_holdings()
+    holdings_df.reset_index(inplace=True)
     show_holdings(holdings_df)
     if st.button('Start Analysis'):
         with st.spinner("Analysis Running"):
