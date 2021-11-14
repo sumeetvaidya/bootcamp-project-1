@@ -289,7 +289,7 @@ def calculate_avg_rolling_portfolio_beta(rolling_portfolio_beta):
 
 def setup_monte_carlo_simulation(df_portfolio_ticker, weight_df, num_years=3,simulations=1000):
     # Set number of simulations
-    num_sims = 1000
+    num_sims = simulations
 
     # Configure a Monte Carlo simulation to forecast three years daily returns
     MC_Portfolio = MCSimulation(
@@ -344,7 +344,7 @@ def compute_cumulative_pnl(initial_investment, df_simulated_returns):
 
 def show_holdings(df):
     df_=df.copy()
-    df_.index = [""] * len(df_)
+    #df_.index = [""] * len(df_)
     fmt = "%Y-%m-%d"
     styler = df_.style.format(
         {
@@ -731,7 +731,7 @@ def run_analysis(portfolio_df):
 
     df_portfolio_ticker = get_raw_portfolio_ticker_data(df_ticker)
     
-    MC_Portfolio = setup_monte_carlo_simulation(df_portfolio_ticker, weight_df)
+    MC_Portfolio = setup_monte_carlo_simulation(df_portfolio_ticker, weight_df,3,300)
     run_monte_carlo_simulation(MC_Portfolio)
     
     df_simulated_returns = calculate_simulated_returns(MC_Portfolio)
