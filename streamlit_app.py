@@ -775,10 +775,10 @@ def main():
     if st.button('Start Analysis'):
         with st.spinner("Analysis Running"):
             #Refresh the Portfolio before every run
-            portfolio_df = pd.DataFrame()
-            portfolio_df = get_holdings()
-            portfolio_df.reset_index(inplace=True)
-            run_analysis(portfolio_df)
+            df_portfolio = pd.DataFrame()
+            df_portfolio = get_holdings()
+            #portfolio_df.reset_index(inplace=True)
+            run_analysis(df_portfolio)
     
 
 if __name__ == "__main__":
