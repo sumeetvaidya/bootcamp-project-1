@@ -47,7 +47,7 @@ def get_holdings():
     df =  pd.read_excel('Holdings.xlsx', sheet_name='Portfolio', parse_dates=True)
     df['Acquisition Date'] = pd.to_datetime(df['Acquisition Date']).dt.normalize()
     df['Start of Year'] = pd.to_datetime(df['Start of Year']).dt.normalize()
-    return df.copy()
+    return df.copy(deep=True)
 
 #Record Portfolio Tickers
 def get_portfolio_tickers(df):
@@ -344,7 +344,7 @@ def compute_cumulative_pnl(initial_investment, df_simulated_returns):
 
 def show_holdings(df):
     df_=df.copy()
-    #df_.index = [""] * len(df_)
+    df_.index = [""] * len(df_)
     fmt = "%Y-%m-%d"
     styler = df_.style.format(
         {
@@ -767,10 +767,17 @@ def run_analysis(portfolio_df):
                           ,beta_summary
                           )
             
+#Get the Holdings File for display
+def get_holdings_display():
+    df =  pd.read_excel('Holdings.xlsx', sheet_name='Portfolio', parse_dates=True)
+    df['Acquisition Date'] = pd.to_datetime(df['Acquisition Date']).dt.normalize()
+    df['Start of Year'] = pd.to_datetime(df['Start of Year']).dt.normalize()
+    return df.copy(deep=True)
+
 def main():
     st.set_page_config(layout='wide')
     show_header()
-    holdings_df = get_holdings()
+    holdings_df = get_holdings_display()
     show_holdings(holdings_df)
     if st.button('Start Analysis'):
         with st.spinner("Analysis Running"):
