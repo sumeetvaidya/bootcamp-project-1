@@ -289,7 +289,7 @@ def calculate_avg_rolling_portfolio_beta(rolling_portfolio_beta):
 
 def setup_monte_carlo_simulation(df_portfolio_ticker, weight_df, num_years=3,simulations=1000):
     # Set number of simulations
-    num_sims = 1000
+    num_sims = simulations
 
     # Configure a Monte Carlo simulation to forecast three years daily returns
     MC_Portfolio = MCSimulation(
@@ -459,7 +459,8 @@ def create_and_show_charts(merged_portfolio_sp_YTD,df_portfolio_value
                           ,rolling_portfolio_beta 
                           ,df_simulated_data
                           ,cumulative_pnl
-                          ,simulation_summary 
+                          ,simulation_summary
+                          ,beta_summary
                           ):
     df_portfolio_pnl = portfolio_pnl(merged_portfolio_sp_YTD)
     df_portfolio_pnl.set_index(['Ticker'], inplace=True)
@@ -648,10 +649,11 @@ def create_and_show_charts(merged_portfolio_sp_YTD,df_portfolio_value
     st.plotly_chart(fig_rolling_21day_returns, use_container_width=True)
     st.plotly_chart(fig_sharpe_ratio, use_container_width=True)
     st.plotly_chart(fig_rolling_60day_beta, use_container_width=True)
+    st.text(beta_summary,use_container_width=True)
     
     st.plotly_chart(fig_simulated_returns, use_container_width=True)
     st.plotly_chart(fig_simulated_cum_pnl, use_container_width=True)
-    st.text(simulation_summary)
+    st.text(simulation_summary,use_container_width=True)
     
     st.plotly_chart(fig1,use_container_width=True)
     st.plotly_chart(fig2,use_container_width=True)
@@ -728,10 +730,12 @@ def run_analysis(portfolio_df):
     
     
     avg_rolling_portfolio_beta = calculate_avg_rolling_portfolio_beta(rolling_portfolio_beta)
+    
+    beta_summary = f"Average 60 Day Rolling Portfolio Beta is {avg_rolling_portfolio_beta:.2f}"
 
     df_portfolio_ticker = get_raw_portfolio_ticker_data(df_ticker)
     
-    MC_Portfolio = setup_monte_carlo_simulation(df_portfolio_ticker, weight_df)
+    MC_Portfolio = setup_monte_carlo_simulation(df_portfolio_ticker, weight_df,3,300)
     run_monte_carlo_simulation(MC_Portfolio)
     
     df_simulated_returns = calculate_simulated_returns(MC_Portfolio)
@@ -760,6 +764,7 @@ def run_analysis(portfolio_df):
                           ,df_simulated_data
                           ,cumulative_pnl 
                           ,simulation_summary
+                          ,beta_summary
                           )
             
 def main():
