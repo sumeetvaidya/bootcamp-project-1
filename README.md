@@ -1,8 +1,24 @@
 
 ## Portfolio Analyzer
-This project ....
+This project uses yFinance, Python, and the Dash library to analyze and display the performance of a stock portfolio in a Dashboard. The following calculations are then displayed:
 
-The project is deployed as a ...
+* analyzes the current P&L
+* compares with S&P 500
+* YTD Return vs SPY YTD
+* Total Return vs SP500
+* P&L Total Return SPY
+* Total Cumulative Return over time
+* Daily Returns, 
+* Cumulative Return by Ticker
+* Rolling 21 day return
+* Sharpe Ratio
+* Rolling 60 day Beta
+* Simulated Returns
+* Simulated Cumulative P&L
+
+The results are displayed in Dash/Plotly and in Streamlit. The application is also available in Streamlit in the cloud via https://share.streamlit.io/sumeetvaidya/bootcamp-project-1/main
+
+This project was built by Sumeet Vaidya, Pat Beeson, William Alford and Scott Oziros
 
 ## Dashboard Images
 ![alt text]()
@@ -14,38 +30,20 @@ The project is deployed as a ...
 This is a Python v 3.7 project leveraging numerous python modules. The modules are to be imported to the main project file.
 
 #### -- Modules
-Modules to be imported to a editor. This project primarily uses Jupyter Notebook while the presentation layer uses Dash for the interactive visual dashboard.
-```
-import pandas as pd
-import numpy as np
-from pathlib import Path
-import sqlalchemy
-%matplotlib inline
-import hvplot.pandas
-import plotly.graph_objects as go
-import dash
-import dash_core_components as dcc
-from dash import html
-import plotly.express as px
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-from MCForecastTools import MCSimulation
-import dash_table
-```
+
+This project  uses Jupyter Notebook while the presentation layer uses Dash for the interactive visual dashboard.
+The Alternate implentation uses streamlit.
+ * pandas
+ * numpy
+ * matplotlib
+ * dash
+ * plotly
+ * yfinance
+ * MCForecastTools
+ * streamlit
 
 #### -- APIs and Datasources
-Alpaca SDK was used to create the Alpaca tradeapi.REST object to get the source data. Reqister for an account with Alpaca to receive a Secret Key and API Key.
-
-Click this [link](https://app.alpaca.markets/login) to register and receive your keys. For security save the keys in an environment file independently outside of the main project file. 
-
-#### -- Connection String to Database
-Database Connection String
-Database connection string and the physical database to consolidate and query the datasources.
-
-```
-database_connection_string ='sqlite:///Muskies.db'
-```
-The project also leverages ten years of daily stocks trades from Yahoo Finanace for the following Indices: Crypto, Bonds, SP500 and the Gold Index.
+The project also leverages three years of daily stocks trades from Yahoo! Finanace for the symbols in the Portfolio and the S&P 500 Index.
 
 - - - 
 ## Installation Guide
@@ -63,7 +61,23 @@ conda install nb_conda_kernels
 conda install dash
 conda install -c plotly jupyter-dash
 conda install -c plotly jupyterlab-dash
+pip install streamlit
+pip install streamlit-aggrid
+conda install pandas
 ```
+## Module version Numbers
+* pandas==1.3.4
+* pandas-datareader==0.10.0
+* numpy==1.20.3
+* plotly==4.14.3
+* streamlit==1.2.0
+* streamlit-aggrid==0.2.2.post4
+* yfinance==0.1.64
+* alpaca-trade-api==1.4.1
+* openpyxl==3.0.9
+
+
+
 
 As a resource, the following link is to the Python 3.7 Reference Guide 
 
@@ -72,6 +86,7 @@ As a resource, the following link is to the Python 3.7 Reference Guide
 
 - - - 
 ## Contributors
+This project was built by Sumeet Vaidya, Pat Beeson, William Alford and Scott Oziros
 This is a group student project for Columbia University FinTech bootcamp.
 
 - - - 
