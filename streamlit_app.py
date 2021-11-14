@@ -777,7 +777,7 @@ def main():
             #Refresh the Portfolio before every run
             df_portfolio = pd.DataFrame()
             df_portfolio = get_holdings()
-            #portfolio_df.reset_index(inplace=True)
+            df_portfolio.reset_index(inplace=True)
             run_analysis(df_portfolio)
     
 
