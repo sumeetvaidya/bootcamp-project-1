@@ -344,7 +344,7 @@ def compute_cumulative_pnl(initial_investment, df_simulated_returns):
 
 def show_holdings(df):
     df_=df.copy()
-    df_.index = [""] * len(df_)
+    #df_.index = [""] * len(df_)
     fmt = "%Y-%m-%d"
     styler = df_.style.format(
         {
