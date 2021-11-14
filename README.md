@@ -33,10 +33,14 @@ View the results in https://share.streamlit.io/sumeetvaidya/bootcamp-project-1/m
 
 ## Dashboard Images
 
+### Startup Screen
 <img width="1423" alt="Screen Shot 2021-11-13 at 9 53 35 PM" src="https://user-images.githubusercontent.com/17937188/141665624-2c01317d-c758-4a2d-b7e0-e921b36a679f.png">
-<img width="1431" alt="Screen Shot 2021-11-13 at 9 54 13 PM" src="https://user-images.githubusercontent.com/17937188/141665637-a83d13dd-4082-405e-a7f0-4416c958ec3d.png">
 
-- - - <img width="1370" alt="Screen Shot 2021-11-13 at 9 59 34 PM" src="https://user-images.githubusercontent.com/17937188/141665750-fe924c2f-4bba-48e1-9cf9-2d66c27e162a.png">
+### Run Analysis
+<img width="1372" alt="Screen Shot 2021-11-14 at 6 02 15 PM" src="https://user-images.githubusercontent.com/17937188/141702212-6b46177d-7e6e-47ce-b602-098f7c1d80de.png">
+
+### Analysis Results
+<img width="1370" alt="Screen Shot 2021-11-13 at 9 59 34 PM" src="https://user-images.githubusercontent.com/17937188/141665750-fe924c2f-4bba-48e1-9cf9-2d66c27e162a.png">
 
 <img width="1323" alt="Screen Shot 2021-11-13 at 10 01 02 PM" src="https://user-images.githubusercontent.com/17937188/141665772-74fe1f83-1c54-4646-ae8c-ca6f9b027021.png">
 <img width="1341" alt="Screen Shot 2021-11-13 at 10 04 04 PM" src="https://user-images.githubusercontent.com/17937188/141665827-c7f9a79c-204f-4227-8bbf-7b235a10e409.png">
