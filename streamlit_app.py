@@ -47,7 +47,7 @@ def get_holdings():
     df =  pd.read_excel('Holdings.xlsx', sheet_name='Portfolio', parse_dates=True)
     df['Acquisition Date'] = pd.to_datetime(df['Acquisition Date']).dt.normalize()
     df['Start of Year'] = pd.to_datetime(df['Start of Year']).dt.normalize()
-    return df
+    return df.copy()
 
 #Record Portfolio Tickers
 def get_portfolio_tickers(df):
